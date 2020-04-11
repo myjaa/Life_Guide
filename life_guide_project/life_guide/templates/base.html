@@ -1,14 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
 <title>Life Guide</title>
 
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-   <div class="logo"><a href="#"><img src ="logo.png" height="35px"></a>
+   <div class="logo"><a href="#"><img src ="{% static 'images/logo.png' %}" height="35px"></a>
   </div>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
