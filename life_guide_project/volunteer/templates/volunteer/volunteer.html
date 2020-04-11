@@ -1,5 +1,86 @@
 {% extends 'base.html' %}
 
 {% block content %}
-This is the volunteer page
+<br>
+<section class="uza-contact-area section-padding-120">
+    <div class="container">
+        <div class="row justify-content-between">
+            <!-- Contact Form -->
+            <div class="col-12 col-lg-8">
+                <div class="uza-contact-form mb-80">
+                    <div class="contact-heading mb-50">
+                        <h4>Thank you for your interest. <br>Please fill out the form below to register yourself as a volunteer.</h4>
+                    </div>
+                    <form method="post" action="/volunteer/">{% csrf_token %}
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control mb-30" name="first_name" placeholder="First Name" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control mb-30" name="last_name" placeholder="Last Name" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control mb-30" name="phone" placeholder="Phone" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control mb-30" name="email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control mb-30" name="location" placeholder="Location">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-info uza-btn btn-3 mt-15">Submit</button>
+                                </div>
+                            </div>
+							 <div class="col-12">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-info uza-btn btn-3 mt-15">Show Volunters</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Single Contact Card -->
+            <div class="col-12 col-lg-3">
+                <div class="contact-sidebar-area mb-80">
+                    <!-- Single Sidebar Area -->
+                    <div class="single-contact-card mb-50">
+                        <h4>Contact Us</h4>
+                        <h3>(+91) 9078613527</h3>
+                        <h6>junedr375@gmail.com</h6>
+                        <h6>Mon - Fri: 9:00 - 19:00 </h6>
+                    </div>
+                    <!-- Single Sidebar Area -->
+                    <!-- <div class="single-contact-card mb-50">
+                        <h3>Jharkhand</h3>
+                        <h6>613 Niche Chowk, Rd 03, Lobin Bagaan, Khunti, Ranchi</h6>
+                    </div>
+                    Single Sidebar Area
+                    <div class="single-contact-card mb-50">
+                        <h3>Telengana</h3>
+                        <h6>101 UCO Bank Lane, Vinayak Nagar, Gacchibowli, Hyderabad</h6>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+{ % if done % }
+alert('Thanks for Volunteering, we will Contact you soon');
+
+document.location = "/volunteer/"; { % endif % }
+</script>
 {% endblock content%}

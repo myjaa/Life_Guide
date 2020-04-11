@@ -1,5 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-This is the shelter page
-{% endblock content%}
+
+    {% comment %} <div id='map' style='width: 400px; height: 300px;'></div>
+    <script>
+    mapboxgl.accessToken = '{{ map_access_token}}';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11'
+    });
+    </script> {% endcomment %}
+
+    
+    
+{% endblock content %}

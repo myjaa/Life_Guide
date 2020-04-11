@@ -1,5 +1,16 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-This is the chatbot page
-{% endblock content%}
+    <br>
+    <ul>
+        <p>1)Add  <strong>+1 (415) 523-8886</strong>  to your contacts.</p>
+        <p>2)Open Whatsapp.</p>
+        <p>3)After selecting 'Whatsapp Bot' type 'join owner-yard'</p>
+        <img src="{% static 'Chatbot.JPG' %}">
+        <p>Give the required response</p>
+        <img src="{% static 'Chatbot-2.JPG' %}">
+        <img src="{% static 'Chatbot-3.JPG' %}">
+    </ul>
+
+{% endblock content %}
