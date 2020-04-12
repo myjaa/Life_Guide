@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-
 {% block content %}
 <br>
 <section class="uza-contact-area section-padding-120">
@@ -43,24 +42,27 @@
                                     <button type="submit" class="btn btn-info uza-btn btn-3 mt-15">Submit</button>
                                 </div>
                             </div>
-							 <div class="col-12">
+                            <!-- div class="col-12">
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-info uza-btn btn-3 mt-15">Show Volunters</button>
+                                    <button type="submit" class="btn btn-info uza-btn btn-3 mt-15">Show Volunteer</button>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </form>
+                    
+                            
+                    
                 </div>
             </div>
+            
             <!-- Single Contact Card -->
             <div class="col-12 col-lg-3">
                 <div class="contact-sidebar-area mb-80">
                     <!-- Single Sidebar Area -->
                     <div class="single-contact-card mb-50">
                         <h4>Contact Us</h4>
-                        <h3>(+91) 9078613527</h3>
-                        <h6>junedr375@gmail.com</h6>
-                        <h6>Mon - Fri: 9:00 - 19:00 </h6>
+                        <h3>Ph. (+91) 9078613527</h3>
+                        <h6>E-mail: saveeveryone@lifeguide.com</h6>
                     </div>
                     <!-- Single Sidebar Area -->
                     <!-- <div class="single-contact-card mb-50">
@@ -78,9 +80,9 @@
     </div>
 </section>
 <script>
-{ % if done % }
+{% if done %}
 alert('Thanks for Volunteering, we will Contact you soon');
 
-document.location = "/volunteer/"; { % endif % }
+document.location = "/volunteer/"; {% endif %}
 </script>
 {% endblock content%}

@@ -1,5 +1,58 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
-This is the donate page
-{% endblock content%}
+<br>
+<section class="uza-about-us-area section-padding-10">
+    <div class="container">
+        <div class="row justify-content-between">
+            
+            <div class="col-12 col-lg-6">
+                <div class="section-heading mb-5">
+                    <h2>Life Guide</h2>
+                </div>
+                <div class="about-us-content mb-10">
+                    <!-- Mona Tab Content -->
+                    <div class="about-tab-content">
+                        <div class="tab-content" id="mona_modelTabContent">
+                            <!-- Tab Content Text -->
+                            <div class="tab-content-text">
+                                <p>Keeping in mind the need for having a dedicated national fund with the primary objective of dealing with any kind of emergency or distress situation, like posed by the COVID-19 (Coronavirus) pandemic, and to provide relief to the affected, a public charitable trust under the name of  </p>
+                                <p>‘Prime Minister’s Citizen Assistance and Relief in Emergency Situations (PM CARES) Fund’ has been set up. LifeGuide has been authorised, as a contribution collection banking partner for PM CARES Fund. </p>
+                                <p>Or you can directly give donation to <strong>LifeGuide</strong>. We will make sure the money reaches the needy person by our Volunteers</p>
+
+                            </div>
+                            <h2>Here Are some QR codes and UPIs forwhich you can raise fund </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="contact-sidebar-area mb-80">
+                    <!-- Single Sidebar Area -->
+                    <div class="single-contact-card mb-50">
+                        <h4>Donate Us in given UPI or scan a Code</h4>
+                        
+                        <h6>UPI : lifeguide@paytm</h6>
+                        <h6>UPI : lifeguide@apl</h6>
+                        <h6>UPI : lifeguide@oksbi</h6>
+                        <h6>UPI : lifeguide@ybl</h6>
+                        <img src="{% static 'donate2.jfif' %}" height="380" width="300">
+                       
+                    </div>
+                    <!-- Single Sidebar Area -->
+                    <!-- <div class="single-contact-card mb-50">
+                        <h3>Jharkhand</h3>
+                        <h6>613 Niche Chowk, Rd 03, Lobin Bagaan, Khunti, Ranchi</h6>
+                    </div>
+                    Single Sidebar Area
+                    <div class="single-contact-card mb-50">
+                        <h3>Telengana</h3>
+                        <h6>101 UCO Bank Lane, Vinayak Nagar, Gacchibowli, Hyderabad</h6>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+ {% endblock content %}
