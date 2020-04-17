@@ -6,7 +6,7 @@ Team Name- Dali
 
 Members-  
 
-1.Mohammad yusuf Jamal
+1.Mohammad Yusuf Jamal(Team Leader)
 
 2.Juned Raza
 
